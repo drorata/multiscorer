@@ -11,14 +11,23 @@ Module _multiscorer_ of this repo, is a workaround for using any number of metri
 
 ## Installation
 
-To "install" the module simply download the source code and place it in your project's directory.  
-(*Alternativelly, download and add to your project just **multiscorer.py** file*).
+Clone the repository and run:
+
+```bash
+python setup.py install
+```
+
+It is recommended to do so inside a virtual environment. For example, if you use `conda`, you can:
+
+```bash
+conda create --name my-cool-env python=3 # or any other list of packages
+```
 
 ## Usage
 
 From a Python script, you can write:
 ```Python
-from multiscorer import MultiScorer
+from multiscorer.multiscorer import MultiScorer
 
 #Scikit's libraries for demonstration
 from sklearn.metrics import accuracy_score, precision_score
